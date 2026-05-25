@@ -161,7 +161,7 @@ def save_report_to_markdown(user_query: str, response_content: str):
     # Write the report with proper formatting
     with open(filename, "w", encoding="utf-8") as f:
         f.write(f"# Investment Analysis Report\n\n")
-        f.write(f"**Request: ** {user_query}\n")
+        f.write(f"**Request: ** {user_query}\n\n")
         f.write(f"**Analysis Date: ** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         f.write("---\n\n")
         f.write(response_content)
