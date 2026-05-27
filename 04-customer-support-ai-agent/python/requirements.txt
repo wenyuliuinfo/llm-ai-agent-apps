@@ -2,3 +2,5 @@ streamlit
 openai
 python-dotenv
 mem0ai>=0.1.29
+mem0ai[nlp]>=0.1.30
+fastembed
