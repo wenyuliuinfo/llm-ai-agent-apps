@@ -38,7 +38,7 @@ class CustomerSupportAIAgent:
     def handle_query(self, query, user_id=None):
         try:
             # Search for relevant memory
-            relevant_memories = self.memory.search(query=query, user_id=user_id)
+            relevant_memories = self.memory.search(query=query, filters={'user_id': user_id})
             
             # Build context from relevant memory
             context = "Relevant past information: \n"
@@ -58,7 +58,7 @@ class CustomerSupportAIAgent:
                 model=model_id,
                 messages=messages,
             )
-            answer = response.choice[0].message.content
+            answer = response.choices[0].message.content
             self.memory.add(query, user_id=user_id, metadata={"app_id": self.app_id, "role": "user"})
             self.memory.add(answer, user_id=user_id, metadata={"app_id": self.app_id, "role": "assistant"})
             
