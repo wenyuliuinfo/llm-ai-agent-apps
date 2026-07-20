@@ -17,14 +17,14 @@ The content is organized into progressive modules, each focusing on a key aspect
 
 ```
 llm-ai-agent-apps/
-    ├── 00-ai-agent-framework/ # Foundational concepts and "context engineering"
-    ├── 01-sequential-workflow/ # Building agents with structured, step-by-step processes
-    ├── 02-starter-ai-agents/ # Templates and examples for creating your first agents
-    ├── 03-data-process-ai-agent/ # An agent specialized in processing and analyzing data
-    ├── 04-customer-support-ai-agent/ # Building a customer service agent using RAG and tools
-    ├── 05-journalist-ai-agent/ # An agent that researches and writes news articles
-    ├── .gitignore
-    └── README.md
+├── 00-ai-agent-framework/          # Foundational concepts and "context engineering"
+├── 01-sequential-workflow/         # Building agents with structured, step-by-step processes
+├── 02-starter-ai-agents/           # Templates and examples for creating your first agents
+├── 03-data-process-ai-agent/       # An agent specialized in processing and analyzing data
+├── 04-customer-support-ai-agent/   # Building a customer service agent using RAG and tools
+├── 05-journalist-ai-agent/         # An agent that researches and writes news articles
+├── .gitignore
+└── README.md
 ```
 
 
@@ -72,7 +72,7 @@ Most projects will require an API key. Create a .env file in the root directory 
     DEEPSEEK_BASE_URL="your-url-here"
     ```
 
-5. Run a Project:
+5. **Run a Project:**
 Navigate into a project folder and execute the main Python script.
     ```bash
     streamlit run data-visualisation-ai-agent.py
@@ -81,27 +81,27 @@ Navigate into a project folder and execute the main Python script.
 ## 🧠 Key Topics & Projects Covered
 This repository is designed to take you from a beginner to a proficient builder of AI agents. The projects are structured as follows:
 
-#### 1. Foundations & Frameworks (00-ai-agent-framework)
+#### 1. Foundations & Frameworks (`00-ai-agent-framework`)
 - Introduces the core concepts of AI agents, including their architecture, reasoning loops, and tool use.
 - Covers context engineering – the art of providing LLMs with the right context, memory, and instructions to perform tasks reliably.
 
-#### 2. Sequential Workflow (01-sequential-workflow)
+#### 2. Sequential Workflow (`01-sequential-workflow`)
 - Explores building agents that follow a predefined, step-by-step process.
 - Learn how to create chains of operations where the output of one step becomes the input for the next, ensuring reliable and predictable outcomes.
 
-#### 3. Starter AI Agents (02-starter-ai-agents)
+#### 3. Starter AI Agents (`02-starter-ai-agents`)
 - A hands-on module with templates for creating your first agent.
 - Provides examples of agents that can answer questions, use simple tools, and maintain conversational memory.
 
-#### 4. Data Processing AI Agent (03-data-process-ai-agent)
+#### 4. Data Processing AI Agent (`03-data-process-ai-agent`)
 - An agent specialized in data tasks.
 - Demonstrates how to build an agent that can load, clean, transform, and analyze structured data (like CSV files) using natural language commands.
 
-#### 5. Customer Support AI Agent (04-customer-support-ai-agent)
+#### 5. Customer Support AI Agent (`04-customer-support-ai-agent`)
 - A more advanced project incorporating Retrieval-Augmented Generation (RAG).
 - Builds a customer service agent that can access a knowledge base (e.g., product documentation) to provide accurate and context-aware answers to user queries.
 
-#### 6. Journalist AI Agent (05-journalist-ai-agent)
+#### 6. Journalist AI Agent (`05-journalist-ai-agent`)
 - The most complex project in the series.
 - Develops an agentic system that can autonomously research a topic from multiple sources, synthesize information, and generate a structured news article or report.
 
